@@ -1,9 +1,9 @@
-```html
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Gra terenowa – Adam Sapieha</title>
+<title>Gra terenowa – Śladami Adama Sapiehy</title>
 
 <style>
 
@@ -11,10 +11,11 @@ body{
 font-family: Arial;
 background:#eef2f3;
 padding:20px;
+text-align:center;
 }
 
 h1{
-text-align:center;
+margin-bottom:30px;
 }
 
 .miejsce{
@@ -23,20 +24,37 @@ background:white;
 padding:20px;
 margin-top:20px;
 border-radius:10px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
 }
 
 button{
-padding:10px 20px;
+padding:12px 20px;
 margin:5px;
 font-size:16px;
 cursor:pointer;
+border:none;
+background:#2d7ef7;
+color:white;
+border-radius:6px;
+}
+
+button:hover{
+background:#1b5fcc;
 }
 
 input{
 display:block;
-margin:10px 0;
+margin:10px auto;
 padding:8px;
-width:300px;
+width:80%;
+}
+
+img{
+margin-top:15px;
+max-width:100%;
+border-radius:8px;
 }
 
 </style>
@@ -58,64 +76,80 @@ document.getElementById(id).style.display="block";
 <body>
 
 <h1>Gra terenowa – Śladami Adama Sapiehy</h1>
+<h1>Gra terenowa rozpoczyna się w Prku Jordana przy popiersiu Kardynała Adama Stefana Sapiehy.</h1>
+<p>Wybierz punkt trasy:</p>
 
-<p>Kliknij miejsce na trasie gry:</p>
-
-<button onclick="pokaz('m1')">Pomnik w Parku Jordana</button>
-<button onclick="pokaz('m2')">Katolicki Dom Kultury</button>
-<button onclick="pokaz('m3')">Pomnik na Plantach</button>
-<button onclick="pokaz('m4')">Pałac Arcybiskupi</button>
+<button onclick="pokaz('m1')">1️⃣ Park Jordana</button>
+<button onclick="pokaz('m2')">2️⃣ Katolicki Dom Kultury</button>
+<button onclick="pokaz('m3')">3️⃣ Pomnik na Plantach</button>
+<button onclick="pokaz('m4')">4️⃣ Pałac Arcybiskupi</button>
 
 
 <div id="m1" class="miejsce">
+
 <h2>Pomnik Adama Sapiehy w Parku Jordana</h2>
 
 <p>1. Jaką funkcję pełnił Adam Sapieha?</p>
 <input type="text">
 
-<p>2. W jakim mieście znajduje się park Jordana?</p>
+<p>2. W jakim mieście znajduje się Park Jordana?</p>
 <input type="text">
 
 <p>3. Jak nazywano Adama Sapiehę?</p>
 <input type="text">
 
+<h3>Droga do następnego miejsca</h3>
+
+<img src="mapa1.jpg">
+
 </div>
 
 
 <div id="m2" class="miejsce">
+
 <h2>Katolicki Dom Kultury im. ks. kard. Adama Sapiehy</h2>
 
-<p>1. Jakie wydarzenia odbywają się w tym miejscu?</p>
+<p>1. Komu poświęcony jest dom kultury?</p>
 <input type="text">
 
-<p>2. Komu poświęcony jest ten dom kultury?</p>
+<p>2. Jaką funkcję pełnił Sapieha w Kościele?</p>
 <input type="text">
 
-<p>3. Jaką funkcję pełnił Sapieha w Kościele?</p>
+<p>3. W jakim mieście znajduje się to miejsce?</p>
 <input type="text">
+
+<h3>Droga do następnego miejsca</h3>
+
+<img src="mapa2.jpg">
 
 </div>
 
 
 <div id="m3" class="miejsce">
+
 <h2>Pomnik Adama Sapiehy na Plantach</h2>
 
 <p>1. W jakim mieście znajdują się Planty?</p>
 <input type="text">
 
-<p>2. Co znajduje się obok pomnika?</p>
+<p>2. Kogo przedstawia pomnik?</p>
 <input type="text">
 
-<p>3. Jakie znaczenie miał Adam Sapieha dla miasta?</p>
+<p>3. Jaką rolę odegrał Sapieha w historii miasta?</p>
 <input type="text">
+
+<h3>Droga do następnego miejsca</h3>
+
+<img src="mapa3.jpg">
 
 </div>
 
 
 <div id="m4" class="miejsce">
+
 <h2>Pałac Arcybiskupi – ul. Franciszkańska 3</h2>
 
-<p>1. Kto mieszkał w Pałacu Arcybiskupim?</p>
+<p>1. Kto mieszkał w tym pałacu?</p>
 <input type="text">
 
 <p>2. Jaką funkcję pełnił Adam Sapieha w Krakowie?</p>
@@ -123,6 +157,10 @@ document.getElementById(id).style.display="block";
 
 <p>3. Z jakim papieżem związane jest to miejsce?</p>
 <input type="text">
+
+<h3>Koniec gry</h3>
+
+<img src="mapa4.jpg">
 
 </div>
 
